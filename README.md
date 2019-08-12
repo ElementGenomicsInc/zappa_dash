@@ -1,7 +1,5 @@
 A [Dash example](https://plot.ly/dash/getting-started) deployed to AWS Lambda and API Gateway using [Zappa](https://github.com/Miserlou/Zappa)
 
-Modify the zappa_settings.json so it points to your bucket
-
 ```bash
 python3 -v -m venv .venvs/zappa
 source .venvs/zappa/bin/activate
