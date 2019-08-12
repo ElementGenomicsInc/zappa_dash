@@ -1,14 +1,14 @@
 A [Dash example](https://plot.ly/dash/getting-started) deployed to AWS Lambda and API Gateway using [Zappa](https://github.com/Miserlou/Zappa)
 
-Example at [https://dash.struce.com]('https://dash.struce.com/])
-
 Modify the zappa_settings.json so it points to your bucket
 
 ```bash
-virtualenv -p ($which python3) env
-source env/bin/activate
-pip install -r requirements.txt
+python3 -v -m venv .venvs/zappa
+source .venvs/zappa/bin/activate
+
+git clone git@github.com:ElementGenomicsInc/zappa_dash.git
+cd zappa_dash/
+pip install -v --no-cache-dir -r requirements.txt
 zappa deploy
 ```
 
-Status: follow the progress on this issue: [https://github.com/plotly/dash/issues/22](https://github.com/plotly/dash/issues/22)
