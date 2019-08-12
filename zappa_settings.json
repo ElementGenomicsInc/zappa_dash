@@ -1,10 +1,11 @@
 {
     "dev": {
-        "project_name": "dash-example",
+        "project_name": "dash-example-custom",
         "app_function": "app.server",
         "aws_region": "us-east-1",
         "s3_bucket": "ucbelement-temp",
         "runtime": "python3.6",
-        "keep_warm": false
+        "keep_warm": false,
+        "base_path": "custom-base-path"
     }
 }
