@@ -3,9 +3,10 @@ import dash_core_components as dcc
 import dash_html_components as html
 import plotly.graph_objs as go
 import pandas as pd
+import os
 
 app = dash.Dash()
-app.server.secret_key = 'notterriblysecret'
+app.server.secret_key = os.environ.get('secret_key', 'secret')
 server = app.server
 
 df = pd.read_csv(
@@ -159,3 +160,5 @@ def update_x_timeseries(hoverData, yaxis_column_name, axis_type):
 
 if __name__ == '__main__':
     app.run_server()
+else:
+    app.config['requests_pathname_prefix'] = '/dev' + app.config['requests_pathname_prefix']
