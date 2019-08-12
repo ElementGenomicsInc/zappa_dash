@@ -5,7 +5,6 @@
         "aws_region": "us-east-1",
         "s3_bucket": "ucbelement-temp",
         "runtime": "python3.6",
-        "keep_warm": false,
-        "base_path": "custom-base-path"
+        "keep_warm": false
     }
 }

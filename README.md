@@ -1,6 +1,6 @@
 A [Dash example](https://plot.ly/dash/getting-started) deployed to AWS Lambda and API Gateway using [Zappa](https://github.com/Miserlou/Zappa)
 
-Must change `"project_name"` and `"base_path"` in `zappa_settings.json` to be unique.
+Must change `"project_name"` in `zappa_settings.json` to be unique.
 
 ```bash
 python3 -v -m venv .venvs/zappa
