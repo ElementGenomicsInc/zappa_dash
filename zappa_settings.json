@@ -3,10 +3,8 @@
         "project_name": "dash-example",
         "app_function": "app.server",
         "aws_region": "us-east-1",
-        "s3_bucket": "dash-zappa",
-        "slim_handler": true,
+        "s3_bucket": "ucbelement-temp",
         "runtime": "python3.6",
-        "keep_warm": false,
-        "domain": "dash.struce.com"
+        "keep_warm": false
     }
 }
